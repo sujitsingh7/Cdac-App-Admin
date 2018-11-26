@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".termThreeFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_one"
+            android:tag="IT Service Management System"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                android:text="IT Service Management System"/>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_two"
+            android:tag="Pervasive Computing"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/textview_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                android:text="Pervasive Computing"/>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_three"
+            android:tag="Information System Design"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/textview_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                android:text="Information System Design"/>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_four"
+            android:tag="Android Programming"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/textview_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                android:text="Android Programming"/>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_five"
+            android:tag="Management Development Program"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/textview_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                android:text="Management Development Program"/>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_six"
+            android:tag="Mobile Communications"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/textview_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                android:text="Mobile Communications"/>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_seven"
+            android:tag="project"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/textview_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                android:text="project"/>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

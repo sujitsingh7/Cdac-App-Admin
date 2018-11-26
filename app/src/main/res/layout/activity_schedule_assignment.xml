@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleAssignmentActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Term :"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner"
+            android:layout_marginTop="3dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject :"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/subspinner"
+            android:layout_marginTop="3dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <CalendarView
+
+        android:id="@+id/simpleCalendarView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="310dp" />
+
+
+    <LinearLayout
+        android:id="@+id/startDateLinearLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/startDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/setStartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Start Date"
+            android:padding="5dp"
+            android:background="@drawable/button_background"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/endDateLinearLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/endDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/setEndButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set End Date"
+            android:padding="5dp"
+            android:background="@drawable/button_background"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

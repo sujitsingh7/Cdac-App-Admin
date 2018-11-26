@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CoE-Docket-Admin</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="file_provider_authority" translatable="false">com.example.sujit.docpoint_admin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
