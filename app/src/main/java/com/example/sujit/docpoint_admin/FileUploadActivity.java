@@ -76,8 +76,9 @@ public class FileUploadActivity extends AppCompatActivity {
         setContentView(R.layout.activity_file_upload);
 
 
+		serverUri="http://192.168.43.108/PHPExcel-1.8/submissionlist.php";
 
-        serverUri="http://172.29.5.9:8090/PHPExcel-1.8/submissionlist.php";
+       
         term =getIntent().getStringExtra("term");
         subject=getIntent().getStringExtra("subject");
         subject_number=getIntent().getStringExtra("subject_number");
