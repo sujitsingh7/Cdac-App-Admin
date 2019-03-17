@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import org.junit.Test;
 

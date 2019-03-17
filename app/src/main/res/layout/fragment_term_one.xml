@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".termOneFragment"
+    tools:context="com.example.sujit.utkal_hacks.termOneFragment"
     android:orientation="vertical">
 
     <LinearLayout
@@ -21,7 +21,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             android:layout_marginHorizontal="10dp"
-            android:tag="IT Infrastructure">
+            android:tag="Engineering Mechanics">
 
             <TextView
                 android:id="@+id/textview_one"
@@ -33,7 +33,7 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="IT Infrastructure"/>
+                android:text="Engineering Mechanics"/>
 
 
         </android.support.v7.widget.CardView>
@@ -45,7 +45,7 @@
             android:padding="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
-            android:tag="Object Oriented Programming concepts"
+            android:tag="Basic Thermodynamics"
             android:layout_marginHorizontal="10dp">
 
             <TextView
@@ -58,7 +58,7 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Object Oriented Programming concepts"/>
+                android:text="Basic Thermodynamics"/>
 
 
         </android.support.v7.widget.CardView>
@@ -70,7 +70,7 @@
             android:padding="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
-            android:tag="Linux OS Administration"
+            android:tag="Computer Programming"
             android:layout_marginHorizontal="10dp">
 
             <TextView
@@ -83,13 +83,13 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Linux OS Administration"/>
+                android:text="Computer Programming"/>
 
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             android:id="@+id/cardview_four"
-            android:tag="Effective Communication"
+            android:tag="Engineering Mathematics"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -108,13 +108,13 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Effective Communication"/>
+                android:text="Engineering Mathematics"/>
 
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             android:id="@+id/cardview_five"
-            android:tag="Web Technology"
+            android:tag="Basic Electronics Engineering"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -133,32 +133,7 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Web Technology"/>
-
-
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardview_six"
-            android:tag="project"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:cardCornerRadius="10dp"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginHorizontal="10dp">
-
-            <TextView
-                android:id="@+id/textview_six"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:textStyle="normal"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:layout_margin="10dp"
-                android:fontFamily="serif"
-                android:text="project"/>
+                android:text="Basic Electronics Engineering"/>
 
 
         </android.support.v7.widget.CardView>

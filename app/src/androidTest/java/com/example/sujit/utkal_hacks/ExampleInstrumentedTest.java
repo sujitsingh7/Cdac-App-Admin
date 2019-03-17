@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.sujit.docpoint_admin", appContext.getPackageName());
+        assertEquals("com.example.sujit.utkal_hacks", appContext.getPackageName());
     }
 }

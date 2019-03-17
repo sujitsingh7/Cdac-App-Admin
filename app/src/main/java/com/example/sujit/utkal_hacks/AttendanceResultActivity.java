@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.Manifest;
 import android.app.ProgressDialog;
@@ -7,20 +7,17 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.CalendarView;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sujit.utkal_hacks.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -262,7 +259,7 @@ mRef.addValueEventListener(new ValueEventListener() {
 
             });
 
-        mSpinner.setItems("--","term1", "term2", "term3");
+        mSpinner.setItems("--","term1", "term2", "term3","term4");
         mSpinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
 
             @Override public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
@@ -272,18 +269,24 @@ mRef.addValueEventListener(new ValueEventListener() {
                 term_in_numbers = term.substring(4);
                 if(item.equals("term1"))
                 {
-                    mSubspinner.setItems("--","IT Infrastructure", "Object Oriented Programming concepts", "Linux OS Administration","Web Technology","Effective Communication","project");
+                    mSubspinner.setItems("--","Engineering Mechanics", "Basic Thermodynamics", "Computer Programming","Engineering Mathematics","Basic Electronics Engineering");
 
                 }
                 if(item.equals("term2"))
                 {
 
-                    mSubspinner.setItems("--","Hadoop Ecosystem","J2EE - Enterprise Java","Concepts of Data Modeling","IT Security","Quantitative Aptitude Skills","project");
+                    mSubspinner.setItems("--","Computer Networking","Data Structure","Probabilty Statistics","Database Engineering","Semiconductor Devices");
                 }
                 if(item.equals("term3"))
                 {
 
-                    mSubspinner.setItems("--","IT Service Management System","Pervasive Computing","Information System Design","Android Programming","Management Development Program","Mobile Communications","project");
+                    mSubspinner.setItems("--","Computer Organisation","Theory of Computation","Machine Learning","Hadoop Ecosystem","Internet Security");
+                }
+
+                if(item.equals("term4"))
+                {
+
+                    mSubspinner.setItems("--","Microprocessor Engineering","Image Processing","Internet of Things","Cloud Computing","Parallel Computing");
                 }
 
                 mSubspinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {

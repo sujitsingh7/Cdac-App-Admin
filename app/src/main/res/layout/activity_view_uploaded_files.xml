@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    tools:context=".ViewUploadedFiles"
+    tools:context="com.example.sujit.utkal_hacks.ViewUploadedFiles"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/recycler_view">

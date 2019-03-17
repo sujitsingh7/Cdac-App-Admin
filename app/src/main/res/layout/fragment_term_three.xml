@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".termThreeFragment"
+    tools:context="com.example.sujit.utkal_hacks.termThreeFragment"
     android:orientation="vertical">
 
     <LinearLayout
@@ -14,7 +14,7 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardview_one"
-            android:tag="IT Service Management System"
+            android:tag="Computer Organisation"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -33,14 +33,14 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="IT Service Management System"/>
+                android:text="Computer Organisation"/>
 
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardview_two"
-            android:tag="Pervasive Computing"
+            android:tag="Theory of Computation"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -59,7 +59,7 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Pervasive Computing"/>
+                android:text="Theory of Computation"/>
 
 
         </android.support.v7.widget.CardView>
@@ -67,7 +67,7 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardview_three"
-            android:tag="Information System Design"
+            android:tag="Machine Learning"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -86,13 +86,13 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Information System Design"/>
+                android:text="Machine Learning"/>
 
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             android:id="@+id/cardview_four"
-            android:tag="Android Programming"
+            android:tag="Hadoop Ecosystem"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -111,13 +111,14 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Android Programming"/>
+                android:text="Hadoop Ecosystem"/>
 
 
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
             android:id="@+id/cardview_five"
-            android:tag="Management Development Program"
+            android:tag="Internet Security"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -136,61 +137,11 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Management Development Program"/>
-
-
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardview_six"
-            android:tag="Mobile Communications"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:cardCornerRadius="10dp"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginHorizontal="10dp">
-
-            <TextView
-                android:id="@+id/textview_six"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:textStyle="normal"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:layout_margin="10dp"
-                android:fontFamily="serif"
-                android:text="Mobile Communications"/>
+                android:text="Internet Security"/>
 
 
         </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardview_seven"
-            android:tag="project"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:cardCornerRadius="10dp"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginHorizontal="10dp">
-
-            <TextView
-                android:id="@+id/textview_seven"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:textStyle="normal"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:layout_margin="10dp"
-                android:fontFamily="serif"
-                android:text="project"/>
-
-
-        </android.support.v7.widget.CardView>
 
 
     </LinearLayout>

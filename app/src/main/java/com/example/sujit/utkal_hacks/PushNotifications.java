@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.sujit.utkal_hacks.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -47,7 +48,7 @@ public class PushNotifications extends AppCompatActivity {
         materialSpinner=findViewById(R.id.notification_spinner);
         notificationEditText=findViewById(R.id.notification_editText);
         sendNotificationButton=findViewById(R.id.notification_button);
-        materialSpinner.setItems("--","term0","term1","term2","term3");
+        materialSpinner.setItems("--","term1","term2","term3","term4");
         materialSpinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, Object item) {

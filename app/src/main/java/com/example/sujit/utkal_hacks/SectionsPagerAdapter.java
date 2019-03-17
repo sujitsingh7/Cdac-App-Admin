@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -24,6 +24,8 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
             case 2:
                 return new termThreeFragment();
+            case 3:
+                return new termFourFragment();
 
         }
         return null;
@@ -31,7 +33,7 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Nullable
@@ -40,13 +42,15 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
         switch(position){
 
             case 0:
-                return "TERM I";
+                return " Ist Year";
 
 
             case 1:
-                return "TERM II";
+                return "IInd Year";
             case 2:
-                return "TERM III";
+                return "IIIrd Year";
+            case 3:
+                return "IVth Year";
         }
         return null;
 

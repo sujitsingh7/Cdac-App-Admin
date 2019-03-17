@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 
 import android.content.Intent;
@@ -10,19 +10,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.sujit.utkal_hacks.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class termThreeFragment extends Fragment {
+public class termTwoFragment extends Fragment {
 
 
-    CardView oneCardView,twoCardView,threeCardView,fourCardView,fiveCardView,sixCardView,sevenCardView;
-    TextView oneTextView,twoTextView,threeTextView,fourTextView,fiveTextView,sixTextView,sevenTextView;
+    CardView oneCardView,twoCardView,threeCardView,fourCardView,fiveCardView,sixCardView;
+    TextView oneTextView,twoTextView,threeTextView,fourTextView,fiveTextView,sixTextView;
 
 
-
-    public termThreeFragment() {
+    public termTwoFragment() {
         // Required empty public constructor
     }
 
@@ -31,30 +32,27 @@ public class termThreeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_term_three, container, false);
-
+        View v = inflater.inflate(R.layout.fragment_term_two, container, false);
 
         oneCardView=v.findViewById(R.id.cardview_one);
         twoCardView=v.findViewById(R.id.cardview_two);
         threeCardView=v.findViewById(R.id.cardview_three);
         fourCardView=v.findViewById(R.id.cardview_four);
         fiveCardView=v.findViewById(R.id.cardview_five);
-        sixCardView=v.findViewById(R.id.cardview_six);
-        sevenCardView=v.findViewById(R.id.cardview_seven);
+
 
         oneTextView=v.findViewById(R.id.textview_one);
         twoTextView=v.findViewById(R.id.textview_two);
         threeTextView=v.findViewById(R.id.textview_three);
         fourTextView=v.findViewById(R.id.textview_four);
         fiveTextView=v.findViewById(R.id.textview_five);
-        sixTextView=v.findViewById(R.id.textview_six);
-        sevenTextView=v.findViewById(R.id.textview_seven);
 
 
 
         oneCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 setUpIntent(v,"subject1");
 
             }
@@ -63,8 +61,8 @@ public class termThreeFragment extends Fragment {
         twoCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setUpIntent(v,"subject2");
 
+                setUpIntent(v,"subject2");
             }
         });
         threeCardView.setOnClickListener(new View.OnClickListener() {
@@ -88,31 +86,19 @@ public class termThreeFragment extends Fragment {
 
             }
         });
-        sixCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setUpIntent(v,"subject7");
-
-            }
-        });
-        sevenCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setUpIntent(v,"subject6");
-
-            }
-        });
 
         return v;
     }
+
     private void setUpIntent(View v,String subject_number) {
 
         Intent intent = new Intent(getActivity(),FileUploadActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.putExtra("term","term3");
+        intent.putExtra("term","term2");
         intent.putExtra("subject",String.valueOf(v.getTag()));
         intent.putExtra("subject_number",subject_number);
         startActivity(intent);
+
 
 
     }

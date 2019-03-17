@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.sujit.utkal_hacks.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeScreenActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -43,7 +44,7 @@ public class HomeScreenActivity extends AppCompatActivity implements NavigationV
 
 
         toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Doc Point");
+        toolbar.setTitle("Utkal-Hacks Admin");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -68,11 +69,6 @@ public class HomeScreenActivity extends AppCompatActivity implements NavigationV
         drawerToggle.syncState();
 
 
-
-
-
-
-
     }
 
     @Override
@@ -91,25 +87,6 @@ public class HomeScreenActivity extends AppCompatActivity implements NavigationV
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intent.putExtra("assignment_type","lab_assignment");
                 startActivity(intent);
-                return true;
-
-            case R.id.schedule_theory_assignment:
-
-                Intent intent1 = new Intent(HomeScreenActivity.this,ScheduleAssignmentActivity.class);
-                intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                intent1.putExtra("assignment_type","theory_assignment");
-                startActivity(intent1);
-
-
-                return true;
-
-
-            case R.id.menu_account:
-
-                Intent menuAccount  = new Intent(HomeScreenActivity.this,MyProfileActivity.class);
-                menuAccount.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(menuAccount);
-
                 return true;
 
 
@@ -146,13 +123,6 @@ public class HomeScreenActivity extends AppCompatActivity implements NavigationV
 
                 return true;
 
-
-            case R.id.alter_prn:
-                Intent alterPrn = new Intent(HomeScreenActivity.this,AlterPrnActivity.class);
-                alterPrn.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(alterPrn);
-
-                return true;
 
 
 

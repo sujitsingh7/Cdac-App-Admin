@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "455684972336",
-    "firebase_url": "https://doc-point.firebaseio.com",
-    "project_id": "doc-point",
-    "storage_bucket": "doc-point.appspot.com"
+    "project_number": "1079429010790",
+    "firebase_url": "https://utkalhacks.firebaseio.com",
+    "project_id": "utkalhacks",
+    "storage_bucket": "utkalhacks.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:455684972336:android:c2e981bb1ab55391",
+        "mobilesdk_app_id": "1:1079429010790:android:7c01df96d1fa4178",
         "android_client_info": {
-          "package_name": "com.example.sujit.docpoint"
+          "package_name": "com.example.sujit.utkal_hacks"
         }
       },
       "oauth_client": [
         {
-          "client_id": "455684972336-oe7ut0me9q8jl8ik7sehu8jkpoe2p4d6.apps.googleusercontent.com",
+          "client_id": "1079429010790-c12jruitjjmmauu1kk0gnmq86fq16aco.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.sujit.docpoint",
+            "package_name": "com.example.sujit.utkal_hacks",
             "certificate_hash": "52177a17a7e7645bec14dc79381df5de80f480b1"
           }
         },
         {
-          "client_id": "455684972336-e96grh8mki5p7bg4m2re8hvf461npd08.apps.googleusercontent.com",
+          "client_id": "1079429010790-dnpkukt8er383af6vslsh3ubjnom3rpm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAnfk3MMG2lciBi4E4cLcuJMLpsvuIKbEA"
+          "current_key": "AIzaSyBVd64Um4JJI8fNyOJzreiQFNxDtGr4wLU"
         }
       ],
       "services": {
@@ -40,51 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "455684972336-e96grh8mki5p7bg4m2re8hvf461npd08.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:455684972336:android:f0c06422fa2dc14d",
-        "android_client_info": {
-          "package_name": "com.example.sujit.docpoint_admin"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "455684972336-cue2b86q2dj1pgghui7d7uc3v806pe3a.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.sujit.docpoint_admin",
-            "certificate_hash": "52177a17a7e7645bec14dc79381df5de80f480b1"
-          }
-        },
-        {
-          "client_id": "455684972336-e96grh8mki5p7bg4m2re8hvf461npd08.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAnfk3MMG2lciBi4E4cLcuJMLpsvuIKbEA"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "455684972336-e96grh8mki5p7bg4m2re8hvf461npd08.apps.googleusercontent.com",
+              "client_id": "1079429010790-dnpkukt8er383af6vslsh3ubjnom3rpm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

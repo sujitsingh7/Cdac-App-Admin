@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,19 +9,17 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
-import android.widget.DatePicker;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sujit.utkal_hacks.R;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.jaredrummler.materialspinner.MaterialSpinner;
 
-import java.util.Calendar;
 import java.util.HashMap;
-import java.util.List;
 
 public class ScheduleAssignmentActivity extends AppCompatActivity {
 
@@ -62,7 +60,7 @@ public class ScheduleAssignmentActivity extends AppCompatActivity {
         assignment_type = getIntent().getStringExtra("assignment_type");
 
 
-        spinner.setItems("--","term1", "term2", "term3");
+        spinner.setItems("--","term1", "term2", "term3","term4");
         spinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
 
             @Override public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
@@ -70,19 +68,26 @@ public class ScheduleAssignmentActivity extends AppCompatActivity {
                 term = item;
                 if(item.equals("term1"))
                 {
-                    subspinner.setItems("--","IT Infrastructure", "Object Oriented Programming concepts", "Linux OS Administration","Web Technology","Effective Communication","project");
+                    subspinner.setItems("--","Engineering Mechanics", "Basic Thermodynamics", "Computer Programming","Engineering Mathematics","Basic Electronics Engineering");
 
                 }
                 if(item.equals("term2"))
                 {
 
-                    subspinner.setItems("--","Hadoop Ecosystem","J2EE - Enterprise Java","Concepts of Data Modeling","IT Security","Quantitative Aptitude Skills","project");
+                    subspinner.setItems("--","Computer Networking","Data Structure","Probabilty Statistics","Database Engineering","Semiconductor Devices");
                 }
                 if(item.equals("term3"))
                 {
 
-                    subspinner.setItems("--","IT Service Management System","Pervasive Computing","Information System Design","Android Programming","Management Development Program","Mobile Communications","project");
+                    subspinner.setItems("--","Computer Organisation","Theory of Computation","Machine Learning","Hadoop Ecosystem","Internet Security");
                 }
+
+                if(item.equals("term4"))
+                {
+
+                    subspinner.setItems("--","Microprocessor Engineering","Image Processing","Internet of Things","Cloud Computing","Parallel Computing");
+                }
+
 
                 subspinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
                     @Override
@@ -101,7 +106,7 @@ public class ScheduleAssignmentActivity extends AppCompatActivity {
                                   month_string ="0"+String.valueOf(month+1);
                                 }
                                 else
-                                    month_string=String.valueOf(month);
+                                    month_string=String.valueOf(month+1);
                                 if(dayOfMonth<10)
                                 {
                                     dayOfMonth_string ="0"+String.valueOf(dayOfMonth);

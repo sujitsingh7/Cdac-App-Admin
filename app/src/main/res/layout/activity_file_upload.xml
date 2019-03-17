@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FileUploadActivity"
+    tools:context="com.example.sujit.utkal_hacks.FileUploadActivity"
     android:orientation="vertical">
 
     <TextView
@@ -83,20 +83,11 @@
         android:layout_gravity="center"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="Download Submission List - Theory"
+        android:text="Download Submission List"
         android:padding="5dp"
         android:background="@drawable/button_background"
        />
-    <Button
-        android:id="@+id/downloadSheetButtonLab"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="Download Submission List - Lab"
-        android:padding="5dp"
-        android:background="@drawable/button_background"
-        />
+
 
 
 

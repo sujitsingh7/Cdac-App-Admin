@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.sujit.utkal_hacks.termTwoFragment"
+    tools:context="com.example.sujit.utkal_hacks.termFourFragment"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,8 +13,8 @@
         android:layout_height="match_parent">
 
         <android.support.v7.widget.CardView
-            android:tag="Computer Networking"
             android:id="@+id/cardview_one"
+            android:tag="Microprocessor Engineering"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -33,13 +33,14 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Computer Networking"/>
+                android:text="Microprocessor Engineering"/>
 
 
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
-            android:tag="Data Structure"
             android:id="@+id/cardview_two"
+            android:tag="Image Processing"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -58,13 +59,15 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Data Structure"/>
+                android:text="Image Processing"/>
 
 
         </android.support.v7.widget.CardView>
+
+
         <android.support.v7.widget.CardView
-            android:tag="Probabilty Statistics"
             android:id="@+id/cardview_three"
+            android:tag="Internet of Things"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -83,13 +86,13 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Probabilty Statistics"/>
+                android:text="Internet of Things"/>
 
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
-            android:tag="Database Engineering"
             android:id="@+id/cardview_four"
+            android:tag="Cloud Computing"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -108,13 +111,14 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Database Engineering"/>
+                android:text="Cloud Computing"/>
 
 
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
-            android:tag="Semiconductor Devices"
             android:id="@+id/cardview_five"
+            android:tag="Parallel Computing"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
@@ -133,10 +137,14 @@
                 android:textSize="18sp"
                 android:layout_margin="10dp"
                 android:fontFamily="serif"
-                android:text="Semiconductor Devices"/>
+                android:text="Parallel Computing"/>
 
 
         </android.support.v7.widget.CardView>
 
+
+
     </LinearLayout>
+
+
 </ScrollView>

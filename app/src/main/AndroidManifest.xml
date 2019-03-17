@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sujit.docpoint_admin">
+    package="com.example.sujit.utkal_hacks">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,7 +14,7 @@
         android:roundIcon="@drawable/ic_contact"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name="com.example.sujit.utkal_hacks.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -34,7 +35,7 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
 
-        <service android:name=".FirebaseIDService">
+        <service android:name="com.example.sujit.utkal_hacks.FirebaseIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
@@ -50,24 +51,24 @@
                 android:resource="@xml/file_provider_paths" />
         </provider>
 
-        <activity android:name=".SignInActivity">
+        <activity android:name="com.example.sujit.utkal_hacks.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".HomeScreenActivity" />
-        <activity android:name=".MyProfileActivity" />
-        <activity android:name=".FileUploadActivity" />
-        <activity android:name=".ScheduleAssignmentActivity" />
-        <activity android:name=".ViewUploadedFiles" />
-        <activity android:name=".FileReaderActivity" />
-        <activity android:name=".AttendanceResultActivity" />
-        <activity android:name=".CourseExamSchedule" />
-        <activity android:name=".AlterPrnActivity" />
-        <activity android:name=".PushNotifications"></activity>
+        <activity android:name="com.example.sujit.utkal_hacks.RegisterActivity" />
+        <activity android:name="com.example.sujit.utkal_hacks.HomeScreenActivity" />
+        <activity android:name="com.example.sujit.utkal_hacks.MyProfileActivity" />
+        <activity android:name="com.example.sujit.utkal_hacks.FileUploadActivity" />
+        <activity android:name="com.example.sujit.utkal_hacks.ScheduleAssignmentActivity" />
+        <activity android:name="com.example.sujit.utkal_hacks.ViewUploadedFiles" />
+        <activity android:name="com.example.sujit.utkal_hacks.FileReaderActivity" />
+        <activity android:name="com.example.sujit.utkal_hacks.AttendanceResultActivity" />
+        <activity android:name="com.example.sujit.utkal_hacks.CourseExamSchedule" />
+        <activity android:name="com.example.sujit.utkal_hacks.AlterPrnActivity" />
+        <activity android:name="com.example.sujit.utkal_hacks.PushNotifications"></activity>
     </application>
 
 </manifest>

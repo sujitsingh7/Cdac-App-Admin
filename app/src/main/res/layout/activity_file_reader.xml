@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FileReaderActivity">
+    tools:context="com.example.sujit.utkal_hacks.FileReaderActivity">
 
 
     <com.github.barteksc.pdfviewer.PDFView

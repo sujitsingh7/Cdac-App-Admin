@@ -1,26 +1,23 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.style.TabStopSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.sujit.utkal_hacks.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 public class AlterPrnActivity extends AppCompatActivity {
 
@@ -65,7 +62,7 @@ public class AlterPrnActivity extends AppCompatActivity {
                             for(DataSnapshot mDataSnapshot : dataSnapshot.getChildren())
                             {
                                 hashMap.put(mDataSnapshot.getKey(),String.valueOf(mDataSnapshot.getValue()));
-                                Log.i(mDataSnapshot.getKey().toString(),mDataSnapshot.getValue().toString());
+                                Log.i(mDataSnapshot.getKey(),mDataSnapshot.getValue().toString());
                                 if(mDataSnapshot.getKey().equals("uid"))
                                 {
                                     uid=String.valueOf(mDataSnapshot.getValue());

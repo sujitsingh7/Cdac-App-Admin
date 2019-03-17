@@ -1,9 +1,10 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.example.sujit.utkal_hacks.R;
 
 //import com.github.barteksc.pdfviewer.PDFView;
 

@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.Manifest;
 import android.app.ProgressDialog;
@@ -22,11 +22,10 @@ import android.widget.Toast;
 import com.android.volley.AuthFailureError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.sujit.utkal_hacks.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,8 +35,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.nbsp.materialfilepicker.MaterialFilePicker;
-import com.nbsp.materialfilepicker.ui.FilePickerActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -45,7 +42,6 @@ import org.json.JSONObject;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 public class FileUploadActivity extends AppCompatActivity {
 
@@ -67,7 +63,8 @@ public class FileUploadActivity extends AppCompatActivity {
 
     String term,subject,subject_number,batch;
 
-    Button launchStudyMaterialButton,submissionListTheoryButton,submissionListLabButton ,viewStudyMaterial;
+    Button launchStudyMaterialButton,submissionListTheoryButton,viewStudyMaterial;
+    int progresspercentage;
 
 
     @Override
@@ -76,7 +73,7 @@ public class FileUploadActivity extends AppCompatActivity {
         setContentView(R.layout.activity_file_upload);
 
 
-		serverUri="http://192.168.43.108/PHPExcel-1.8/submissionlist.php";
+		serverUri="http://172.29.5.9:8090/PHPExcel-1.8/submissionlist.php";
 
        
         term =getIntent().getStringExtra("term");
@@ -86,7 +83,7 @@ public class FileUploadActivity extends AppCompatActivity {
         Log.i("subject",subject);
         Log.i("subject_number",subject_number);
         submissionListTheoryButton=findViewById(R.id.downloadSheetButtonTheory);
-        submissionListLabButton=findViewById(R.id.downloadSheetButtonLab);
+
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMax(100);
@@ -136,17 +133,6 @@ public class FileUploadActivity extends AppCompatActivity {
             }
         });
 
-        submissionListLabButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                submissionlist("lab_assignment");
-
-
-
-            }
-        });
 
         viewStudyMaterial.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -158,8 +144,6 @@ public class FileUploadActivity extends AppCompatActivity {
                 intent.putExtra("subject",subject);
                 intent.putExtra("subject_number",subject_number);
                 startActivity(intent);
-
-
 
 
             }
@@ -214,7 +198,7 @@ public class FileUploadActivity extends AppCompatActivity {
 
 
 
-
+                    progresspercentage=0;
 
 
                     databaseReference = FirebaseDatabase.getInstance().getReference().child("files").child(subject).push();
@@ -276,7 +260,7 @@ public class FileUploadActivity extends AppCompatActivity {
 
 
                             progressDialog.show();
-                            int progresspercentage = (int) ((int)(100.0 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount());
+                             progresspercentage = (int) ((int)(100.0 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount());
                             progressDialog.incrementProgressBy(progresspercentage);
 
 
@@ -353,7 +337,7 @@ public class FileUploadActivity extends AppCompatActivity {
 
                     {
                         @Override
-                        protected Map<String, String> getParams() throws AuthFailureError {
+                        protected Map<String, String> getParams() {
                             Map<String, String> params = new HashMap<>();
                             params.put("type", assignment_type);
                             params.put("subject", subject.toLowerCase());
@@ -398,6 +382,7 @@ public class FileUploadActivity extends AppCompatActivity {
     }
 
     private void chooseFile() {
+        progresspercentage=0;
 
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
@@ -425,10 +410,5 @@ public class FileUploadActivity extends AppCompatActivity {
 
         }
     }
-
-
-
-
-
 
         }

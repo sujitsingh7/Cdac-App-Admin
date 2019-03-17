@@ -1,4 +1,4 @@
-package com.example.sujit.docpoint_admin;
+package com.example.sujit.utkal_hacks;
 
 import android.Manifest;
 import android.app.ProgressDialog;
@@ -17,14 +17,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sujit.utkal_hacks.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -58,7 +56,7 @@ public class CourseExamSchedule extends AppCompatActivity {
         setContentView(R.layout.activity_course_exam_schedule);
 
         mSpinner =  findViewById(R.id.spinner);
-        mSubspinner = findViewById(R.id.subspinner);
+        //mSubspinner = findViewById(R.id.subspinner);
 
         chooseFileImageView = findViewById(R.id.choose_file_imageview);
 
@@ -79,11 +77,6 @@ public class CourseExamSchedule extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-
-
-
-
                 if (uri != null) {
 
                     File file = new File(uri.getPath());
@@ -91,17 +84,11 @@ public class CourseExamSchedule extends AppCompatActivity {
                     final String fileName = file.getName();
                     String format[] = fileName.split("\\.");
 
-                    // Log.i("format", format.toString());
                     final String fileFormat = format[format.length-1];
 
+                            String pushId = databaseReference.getKey();
 
-
-
-
-
-                                final String pushId = databaseReference.getKey();
-
-                                storageReference = FirebaseStorage.getInstance().getReference().child("schedule").child(term).child(schedule_type);
+                                storageReference = FirebaseStorage.getInstance().getReference().child("schedule").child(term).child(pushId);
 
                                 storageReference.putFile(uri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                                     @Override
@@ -172,14 +159,6 @@ public class CourseExamSchedule extends AppCompatActivity {
 
                             }
 
-
-
-
-
-
-
-
-
             }
         });
 
@@ -217,7 +196,7 @@ public class CourseExamSchedule extends AppCompatActivity {
 
         });
 
-        mSpinner.setItems("--","term1", "term2", "term3");
+        mSpinner.setItems("--","term1", "term2", "term3","term4");
         mSpinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
 
             @Override public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
@@ -225,40 +204,18 @@ public class CourseExamSchedule extends AppCompatActivity {
                 term = item;
 
                 term_in_numbers = term.substring(4);
-                mSubspinner.setItems("--","Course", "Exam");
-
-                mSubspinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(MaterialSpinner view1, int position1, long id1, Object item1) {
-
-                        schedule_type=String.valueOf(item1);
-
-                        if(schedule_type.equals("Course"))
-                        {
-                            databaseReference = FirebaseDatabase.getInstance().getReference().child("schedule").child(schedule_type);
-                            databaseReference.keepSynced(true);
-
-
-                        }
-
-                        if(schedule_type.equals("Exam"))
-                        {
-                            databaseReference = FirebaseDatabase.getInstance().getReference().child("schedule").child(term).child(schedule_type);
-                            databaseReference.keepSynced(true);
-
-                        }
-                        chooseFileImageView.setVisibility(View.VISIBLE);
-                        chooseFileImageView.setEnabled(true);
-
-
-
-                        //option to choose file,upload into firebase storage and database...
+                //mSubspinner.setItems("--","Course", "Exam");
 
 
 
 
-                    }
-                });
+
+
+
+                chooseFileImageView.setVisibility(View.VISIBLE);
+                chooseFileImageView.setEnabled(true);
+
+
 
             }
         });
@@ -270,6 +227,10 @@ public class CourseExamSchedule extends AppCompatActivity {
 
 
     private void chooseFile() {
+
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("schedule").child(term).push();
+
+        databaseReference.keepSynced(true);
 
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
@@ -311,12 +272,5 @@ public class CourseExamSchedule extends AppCompatActivity {
 
         }
     }
-
-
-
-
-
-
-
-    }
+}
 
